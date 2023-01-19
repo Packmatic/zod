@@ -63,7 +63,7 @@
     "play": "nodemon -e ts -w . -x tsx playground.ts",
     "depcruise": "depcruise -c .dependency-cruiser.js src",
     "benchmark": "tsx src/benchmarks/index.ts",
-    "prepare": "husky install"
+    "prepare": "npm run build:esm"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.0",
