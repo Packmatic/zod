@@ -63,7 +63,8 @@
     "play": "nodemon -e ts -w . -x tsx playground.ts",
     "depcruise": "depcruise -c .dependency-cruiser.js src",
     "benchmark": "tsx src/benchmarks/index.ts",
-    "prepare": "npm run build:esm && npm run build:cjs"
+    "prepare": "npm run build:esm && npm run build:cjs",
+    "prepack": "npm run build:esm && npm run build:cjs"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.0",
